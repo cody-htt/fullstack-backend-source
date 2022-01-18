@@ -21,9 +21,9 @@ public class Project {
     private String projectIdentifier;
     @NotBlank(message = "Project Description is required")
     private String description;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-mm-dd@HH:mm:ss.sss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-mm-dd")
     private Date startDate;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-mm-dd@HH:mm:ss.sss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-mm-dd")
     private Date endDate;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-mm-dd@HH:mm:ss.sss")

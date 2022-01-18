@@ -1709,3 +1709,37 @@ java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supporte
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-01-19 03:50:31 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMP" not found; SQL statement:
+DELETE FROM EMP WHERE ID=3 [42102-200]
+2022-01-19 03:50:41 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE FROM PROJECT WHERE[*]"; expected "NOT, EXISTS, INTERSECTS, UNIQUE"; SQL statement:
+DELETE FROM PROJECT WHERE [42001-200]
+2022-01-19 03:51:43 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE FROM PROJECT WHERE ID=7
+DELETE[*] FROM PROJECT WHERE ID=9"; SQL statement:
+DELETE FROM PROJECT WHERE ID=7
+DELETE FROM PROJECT WHERE ID=9 [42000-200]
+2022-01-19 03:51:45 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE FROM PROJECT WHERE ID=7
+DELETE[*] FROM PROJECT WHERE ID=9"; SQL statement:
+DELETE FROM PROJECT WHERE ID=7
+DELETE FROM PROJECT WHERE ID=9 [42000-200]
+2022-01-19 03:52:25 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DBCC[*] CHECKIDENT ('PROJECT', RESEED, 1)"; expected "DELETE, DROP, DECLARE, DEALLOCATE"; SQL statement:
+DBCC CHECKIDENT ('PROJECT', RESEED, 1) [42001-200]
+2022-01-19 03:52:50 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "JDBC[*] CHECKIDENT ('PROJECT', RESEED, 1)"; SQL statement:
+JDBC CHECKIDENT ('PROJECT', RESEED, 1) [42000-200]
+2022-01-19 03:52:50 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "JDBC[*] CHECKIDENT ('PROJECT', RESEED, 1)"; SQL statement:
+JDBC CHECKIDENT ('PROJECT', RESEED, 1) [42000-200]
+2022-01-19 03:52:50 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "JDBC[*] CHECKIDENT ('PROJECT', RESEED, 1)"; SQL statement:
+JDBC CHECKIDENT ('PROJECT', RESEED, 1) [42000-200]
+2022-01-19 03:52:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "JDBC[*] CHECKIDENT ('PROJECT', RESEED, 1)"; SQL statement:
+JDBC CHECKIDENT ('PROJECT', RESEED, 1) [42000-200]
+2022-01-19 03:53:33 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "PROJECT[*] TRUNCATE"; expected "PREPARE"; SQL statement:
+PROJECT TRUNCATE [42001-200]
